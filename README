@@ -1,0 +1,11 @@
+In the Beginning was the Command Line
+
+This is an essay written by Neal Stephenson available: 
+<http://www.cryptonomicon.com/beginning.html>
+
+I have taken it upon myself to make it available in a variety of formats.
+Markdown, tex, PDF so far.
+I will make an ebook soon.
+
+I use pandoc to convert the markdown file into .tex,
+and I will use the same tool to create the ebook when I get round to it.
