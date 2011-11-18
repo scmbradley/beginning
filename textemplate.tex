@@ -1,0 +1,48 @@
+\documentclass[
+  fontsize=11pt,
+  paper=landscape,
+  twocolumn=true,
+  pagesize=pdftex,
+  DIV=15,
+  ]{scrartcl}
+\usepackage{amssymb,amsmath,enumerate}
+\usepackage[T1]{fontenc}
+\usepackage[osf]{mathpazo}
+\usepackage{inconsolata}
+
+$if(url)$
+\usepackage{url}
+$endif$
+
+\usepackage[unicode=true]{hyperref}
+\hypersetup{breaklinks=true, pdfborder={0 0 0}}
+
+$if(listings)$
+\usepackage{listings}
+\lstset{
+  basicstyle=\small\ttfamily,
+  breaklines=true
+}
+$endif$
+
+\setcounter{secnumdepth}{0}
+\setlength{\columnsep}{2em}
+\setkomafont{disposition}{\normalfont}
+\setkomafont{description}{\normalfont\scshape}
+$if(title)$
+\title{$title$}
+$endif$
+$if(author)$
+\author{$for(author)$$author$$sep$ \and $endfor$}
+$endif$
+$if(date)$
+\date{$date$}
+$endif$
+
+\begin{document}
+$if(title)$
+\maketitle
+$endif$
+$body$
+
+\end{document}

@@ -1,0 +1,2 @@
+#!/bin/zsh
+pandoc -f markdown -t latex -o beginning.tex --template textemplate.tex --listings beginning.markdown
